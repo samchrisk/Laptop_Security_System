@@ -4,7 +4,9 @@
     <string name="login">login</string>
     <string name="passwordhint">Password</string>
     <string name="usernamehint">Username</string>
-    <string name="confirm">Confirm</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_out">Sign out</string>
     <string name="searchid">Search ID</string>
     <string name="studentID">Student Number</string>
+    <string name="user_icon">User icon</string>
 </resources>

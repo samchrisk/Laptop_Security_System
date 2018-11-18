@@ -28,7 +28,7 @@ public class ManualSignActivity extends AppCompatActivity {
         cmdScan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(v.getContext(),ManualSignActivity.class);
+                Intent intent= new Intent(v.getContext(),ScanActivity.class);
                 v.getContext().startActivity(intent);
             }
         });

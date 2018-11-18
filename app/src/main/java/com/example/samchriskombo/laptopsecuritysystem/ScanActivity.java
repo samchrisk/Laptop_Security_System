@@ -133,17 +133,22 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
         final String scanResult=result.getText();
         AlertDialog.Builder builder=new AlertDialog.Builder(this);
         builder.setTitle("Scan Result");
+
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                scannerView.resumeCameraPreview(ScanActivity.this);
+                //scannerView.resumeCameraPreview(ScanActivity.this);
+                Intent intent=new Intent(ScanActivity.this, Confirmation_list.class);
+                startActivity(intent);
             }
         });
-        builder.setNegativeButton("Check", new DialogInterface.OnClickListener() {
+
+        builder.setNegativeButton("Incorrect Scan", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse(scanResult));
-                startActivity(intent);
+                scannerView.resumeCameraPreview(ScanActivity.this);
+                /*Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse(scanResult));
+                startActivity(intent);*/
             }
         });
 
