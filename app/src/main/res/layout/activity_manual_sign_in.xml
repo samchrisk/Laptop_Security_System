@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ManualSignActivity">
+
+    <Button
+        android:id="@+id/cmdScan"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:layout_margin="10dp"
+        android:background="@layout/button_rounded_background"
+        android:text="@string/scan"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@id/txtStudentId"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/studentID"
+            android:id="@+id/txtStudentId"
+            android:padding="5dp"
+            android:gravity="left"
+            android:layout_margin="10dp"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@layout/button_rounded_background"
+            android:layout_margin="10dp"
+            android:text="@string/searchid"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtStudentId"
+            android:id="@+id/cmdCheck"/>
+
+</android.support.constraint.ConstraintLayout>

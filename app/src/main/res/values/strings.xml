@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Laptop Security System</string>
+    <string name="scan">scan</string>
+    <string name="login">login</string>
+    <string name="passwordhint">Password</string>
+    <string name="usernamehint">Username</string>
+    <string name="confirm">Confirm</string>
+    <string name="searchid">Search ID</string>
+    <string name="studentID">Student Number</string>
+</resources>
