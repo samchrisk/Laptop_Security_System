@@ -15,7 +15,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/Daystar">
+            android:theme="@style/Daystar"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,10 +25,14 @@
         </activity>
         <activity
             android:name=".ScanActivity"
-            android:theme="@style/Daystar" />
-        <activity android:name=".ManualSignActivity"></activity>
+            android:theme="@style/Daystar"
+            android:noHistory="true"/>
+        <activity
+            android:name=".ManualSignActivity"></activity>
 
-        <activity android:name=".Confirmation_list"></activity>
+        <activity
+            android:name=".Confirmation_list"
+            android:noHistory="true"></activity>
 
     </application>
 
